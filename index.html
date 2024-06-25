@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Branden.Dev</title>
+</head>
+
+<body>
+  <header class="header container">
+    <h3 class="header__name">Branden.Dev</h3>
+    <nav>
+      <ul class="header__menu">
+        <li><a href="#about" class="header__link">About</a></li>
+        <li><a href="#projects" class="header__link">Projects</a></li>
+        <li><a href="#contact" class="header__link">Contact</a></li>
+        <li class="header__line"></li>
+        <li><button id="toggle-mode" class="header__sun-button"><svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32" id="sun">
+              <circle cx="16" cy="16" r="9" fill="var(--color-light)"></circle>
+              <path fill="var(--color-light)"
+                d="M16 6c-.55 0-1-.45-1-1v-2c0-.55.45-1 1-1s1 .45 1 1v2c0 .55-.45 1-1 1zM16 30c-.55 0-1-.45-1-1v-2c0-.55.45-1 1-1s1 .45 1 1v2c0 .55-.45 1-1 1zM29 17h-2c-.55 0-1-.45-1-1s.45-1 1-1h2c.55 0 1 .45 1 1s-.45 1-1 1zM5 17h-2c-.55 0-1-.45-1-1s.45-1 1-1h2c.55 0 1 .45 1 1s-.45 1-1 1zM23.78 9.22c-.26 0-.51-.1-.71-.29-.39-.39-.39-1.02 0-1.41l1.41-1.41c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41l-1.41 1.41c-.2.2-.45.29-.71.29zM6.81 26.19c-.26 0-.51-.1-.71-.29-.39-.39-.39-1.02 0-1.41l1.41-1.41c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41l-1.41 1.41c-.2.2-.45.29-.71.29zM25.19 26.19c-.26 0-.51-.1-.71-.29l-1.41-1.41c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.41 1.41c.39.39.39 1.02 0 1.41-.2.2-.45.29-.71.29zM8.22 9.22c-.26 0-.51-.1-.71-.29l-1.41-1.41c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.41 1.41c.39.39.39 1.02 0 1.41-.2.2-.45.29-.71.29z">
+              </path>
+            </svg></button></li>
+        <li><a class="header__linkedin-button" href="https://www.linkedin.com" target="_blank"><svg
+              xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="var(--color-light)">
+              <path
+                d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
+              </path>
+            </svg></a></li>
+        <li><a class="header__git-button" href="https://github.com/BrandenOrefice" target="_blank"><svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--color-light)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z">
+              </path>
+            </svg></a></li>
+        <li><a href="#" class="mobile-nav__resume button">Resume</a></li>
+      </ul>
+      <button class="header__bars"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
+          viewBox="0 0 24 24" id="justify" fill="var(--color-light)">
+          <path
+            d="M21.5,17h-19C2.223877,17,2,17.223877,2,17.5S2.223877,18,2.5,18h19c0.276123,0,0.5-0.223877,0.5-0.5S21.776123,17,21.5,17z M2.5,8h19C21.776123,8,22,7.776123,22,7.5S21.776123,7,21.5,7h-19C2.223877,7,2,7.223877,2,7.5S2.223877,8,2.5,8z M21.5,12h-19C2.223877,12,2,12.223877,2,12.5S2.223877,13,2.5,13h19c0.276123,0,0.5-0.223877,0.5-0.5S21.776123,12,21.5,12z">
+          </path>
+        </svg></button>
+    </nav>
+  </header>
+  <div class="mobile-ham__button">
+    <nav>
+      <ul class="mobile-nav__menu">
+        <li><a class="mobile-nav__link" href="#about">About</a></li>
+        <li><a class="mobile-nav__link" href="projects">Projects</a></li>
+        <li><a class="mobile-nav__link" href="#contact">Contact</a></li>
+        <li class="mobile-nav__line"></li>
+        <li><button id="toggle-mode" class="mobile-ham__sun-button"><svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32" id="sun">
+              <circle cx="16" cy="16" r="9" fill="var(--color-light)"></circle>
+              <path fill="var(--color-light)"
+                d="M16 6c-.55 0-1-.45-1-1v-2c0-.55.45-1 1-1s1 .45 1 1v2c0 .55-.45 1-1 1zM16 30c-.55 0-1-.45-1-1v-2c0-.55.45-1 1-1s1 .45 1 1v2c0 .55-.45 1-1 1zM29 17h-2c-.55 0-1-.45-1-1s.45-1 1-1h2c.55 0 1 .45 1 1s-.45 1-1 1zM5 17h-2c-.55 0-1-.45-1-1s.45-1 1-1h2c.55 0 1 .45 1 1s-.45 1-1 1zM23.78 9.22c-.26 0-.51-.1-.71-.29-.39-.39-.39-1.02 0-1.41l1.41-1.41c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41l-1.41 1.41c-.2.2-.45.29-.71.29zM6.81 26.19c-.26 0-.51-.1-.71-.29-.39-.39-.39-1.02 0-1.41l1.41-1.41c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41l-1.41 1.41c-.2.2-.45.29-.71.29zM25.19 26.19c-.26 0-.51-.1-.71-.29l-1.41-1.41c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.41 1.41c.39.39.39 1.02 0 1.41-.2.2-.45.29-.71.29zM8.22 9.22c-.26 0-.51-.1-.71-.29l-1.41-1.41c-.39-.39-.39-1.02 0-1.41s1.02-.39 1.41 0l1.41 1.41c.39.39.39 1.02 0 1.41-.2.2-.45.29-.71.29z">
+              </path>
+            </svg></button></li>
+        <li><a class="mobile-ham__git-button" href="https://github.com/Branden-Orefice" target="_blank"><svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="var(--color-light)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z">
+              </path>
+            </svg></a></li>
+        <li><a href="#" class="mobile-nav__resume button">Resume</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main>
+    <section class="hero container">
+      <h3 class="hero__subtitle">Hi, my name is</h3>
+      <h1 class="hero__title">Branden Orefice</h1>
+      <h2 class="hero__subtitletwo">FrontEnd Developer</h2>
+      <p class="hero__description">I'm a passionate <strong>Frontend/Fullstack</strong> developer who specializes in
+        creating interative
+        applications for users to experience.</p>
+    </section>
+    <section id="about" class="about container section">
+      <div class="about__information">
+        <h2 class="about__title">About</h2>
+        <p class="about__description">Hello! My name is Branden and I love to creating things for the internet. </p>
+        <p class="about__description">I've always had a passion for technology and building projects. I decided to go
+          all in with web development and I haven't looked back since. My goal is the be the best version of myself and
+          build software that looks great and works well behind the scenes. </p>
+        <p class="about__description">When I'm not at the computer, I'm golfing, turning wrenches, spending time with my
+          wife and family, and occasionally eating ice cream.</p>
+        <hr class="about__hr">
+        <h3 class="about__subtitle">Technologies</h3>
+        <div class="about__ul-container">
+          <ul class="bx-ul">
+            <li class="about__list"><i class='bx bxl-react bx-sm'></i>React</li>
+            <li class="about__list"><i class='bx bxl-javascript bx-sm'></i>JavaScript (ES6+)</li>
+            <li class="about__list"><i class='bx bxl-css3 bx-sm'></i>CSS</li>
+          </ul>
+          <ul class="bx-ul">
+            <li class="about__list"><i class='bx bxl-nodejs bx-sm'></i>Node.js</li>
+            <li class="about__list"><i class='bx bxl-postgresql bx-sm'></i>PostgreSQL</li>
+            <li class="about__list"><i class='bx bxl-mongodb bx-sm'></i>MongoDB</li>
+          </ul>
+        </div>
+      </div>
+      <div class="about__img-wrap">
+        <img src="/aboutimage.png" alt="photo of me" class="about__img" />
+      </div>
+    </section>
+    <section class="projects container section" id="projects">
+      <h2 class="projects__title">Projects</h2>
+      <p class="projects__description">Some things i've built recently</p>
+      <div class="project__container">
+        <!-- Project 1 -->
+        <h3 class="project__title">World Wise</h3>
+        <div class="projects__img-wrapper project__image1">
+          <img src="/WorldWise.png" alt="value" />
+        </div>
+        <div class="project__div project__content1">
+          <h3 class="project__subtitle">World Wise</h3>
+          <p class="project__description1">Tech Stack: JavaScript, CSS Modules, React
+          </p>
+          <p class="project__description2">WorldWise helps you track your travels and create a visual record of your
+            adventures. It allows you to add cities to your list and view them on a world map, as well as view
+            information about each city.</p>
+          <a class="button project__btn" href="https://world-wise-project.netlify.app" target="_blank">Website</a>
+        </div>
+        <!-- Project 2 -->
+
+        <!-- <h3 class="project__title">Synthwave</h3>
+        <div class="projects__img-wrapper project__image2">
+          <img src="/Screenshot (1).png" alt="value" />
+        </div>
+        <div class="project__div project__content2">
+          <h3 class="project__subtitle">Synthwave</h3>
+          <p class="project__description1">Tech Stack: JavaScript, CSS, HTML, MONGODB, React
+          </p>
+          <p class="project__description2">Id aliquet risus feugiat in ante metus dictum at. Sed velit dignissim sodales
+            ut
+            eu sem integer vitae justo.
+            Erat pellentesque adipiscing commodo elit at imperdiet dui. Nisl suscipit adipiscing bibendum est ultricies
+            integer. Et malesuada fames ac turpis egestas maecenas. Ullamcorper a lacus vestibulum sed arcu non odio.
+            Eget
+            aliquet nibh praesent tristique magna sit amet. Pellentesque dignissim enim sit amet venenatis urna cursus
+            eget.
+            Ut diam quam nulla porttitor massa id. Nec dui nunc mattis enim ut. Tincidunt vitae semper quis lectus.</p>
+          <a class="button project__btn" href="#">Website</a>
+        </div> -->
+
+        <!-- Project 3 -->
+
+        <!-- <h3 class="project__title">Natour</h3>
+        <div class="projects__img-wrapper project__image3">
+          <img src="/Screenshot (1).png" alt="value" />
+        </div>
+        <div class="project__div project__content3">
+          <h3 class="project__subtitle">Natour</h3>
+          <p class="project__description1">Tech Stack: JavaScript, CSS, HTML, MONGODB, React
+          </p>
+          <p class="project__description2">Id aliquet risus feugiat in ante metus dictum at. Sed velit dignissim sodales
+            ut
+            eu sem integer vitae justo.
+            Erat pellentesque adipiscing commodo elit at imperdiet dui. Nisl suscipit adipiscing bibendum est ultricies
+            integer. Et malesuada fames ac turpis egestas maecenas. Ullamcorper a lacus vestibulum sed arcu non odio.
+            Eget
+            aliquet nibh praesent tristique magna sit amet. Pellentesque dignissim enim sit amet venenatis urna cursus
+            eget.
+            Ut diam quam nulla porttitor massa id. Nec dui nunc mattis enim ut. Tincidunt vitae semper quis lectus.</p>
+          <a class="button project__btn" href="#">Website</a>
+        </div> -->
+
+        <!-- Project 4 -->
+
+        <!-- <h3 class="project__title">React Quiz</h3>
+        <div class="projects__img-wrapper project__image4">
+          <img src="/Screenshot (1).png" alt="value" />
+        </div>
+        <div class="project__div project__content4">
+          <h3 class="project__subtitle">React Quiz</h3>
+          <p class="project__description1">Tech Stack: JavaScript, CSS, HTML, MONGODB, React
+          </p>
+          <p class="project__description2">Id aliquet risus feugiat in ante metus dictum at. Sed velit dignissim sodales
+            ut
+            eu sem integer vitae justo.
+            Erat pellentesque adipiscing commodo elit at imperdiet dui. Nisl suscipit adipiscing bibendum est ultricies
+            integer. Et malesuada fames ac turpis egestas maecenas. Ullamcorper a lacus vestibulum sed arcu non odio.
+            Eget
+            aliquet nibh praesent tristique magna sit amet. Pellentesque dignissim enim sit amet venenatis urna cursus
+            eget.
+            Ut diam quam nulla porttitor massa id. Nec dui nunc mattis enim ut. Tincidunt vitae semper quis lectus.</p>
+          <a class="button project__btn" href="#">Website</a> -->
+      </div>
+      <div class="project container section">
+        <h3><strong>More Projects Coming Soon....</strong></h3>
+      </div>
+      </div>
+    </section>
+    <section class="contact container section" id="contact">
+      <h2 class="contact__title">Get In Touch</h2>
+      <p class="contact__description">I'm currently looking for new opportunities, my inbox is always open. Whether you
+        have a business inquiry or just want to say hi, i'll try my absolute best to get back to you as soon as
+        possible.</p>
+      <a class="contact__button button" href="mailto:bran.orefice@gmail.com" target="_blank">Reach Out</a>
+    </section>
+  </main>
+  <footer class="footer container section">
+    <h3 class="footer__title">~ Branden Orefice ~</h3>
+  </footer>
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
