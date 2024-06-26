@@ -68,7 +68,7 @@
 /* MEDIA QUERIES */
 
 /* Extra Small Screen */
-@media (min-width: 475px) {
+@media (min-width: 460px) {
   .projects__title {
     font-size: var(--size-3xl);
   }
