@@ -38,7 +38,7 @@
 /* MEDIA QUERIES */
 
 /* Extra Small Screen */
-@media (min-width: 460px) {
+@media (min-width: 390px) {
   .hero {
     gap: 1.5rem;
   }

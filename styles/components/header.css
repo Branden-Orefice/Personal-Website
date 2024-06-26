@@ -22,7 +22,7 @@
 /* MEDIA QUERIES */
 
 /* Extra Small Screen */
-@media (min-width: 460px) {
+@media (min-width: 390px) {
   .header__name {
     display: none;
   }
