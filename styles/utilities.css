@@ -59,15 +59,6 @@
   margin-top: 10rem;
 }
 
-.loading {
-  filter: blur(40px) grayscale(100%);
-}
-
-.loaded {
-  filter: blur(0) grayscale(0);
-  transition: 0.7s ease-in-out;
-}
-
 .light-mode {
   --color-light: #020617;
   --color-dark: #f1f5f9;
