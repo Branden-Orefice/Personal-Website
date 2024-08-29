@@ -54,7 +54,7 @@
     <nav>
       <ul class="mobile-nav__menu">
         <li><a class="mobile-nav__link" href="#about">About</a></li>
-        <li><a class="mobile-nav__link" href="projects">Projects</a></li>
+        <li><a class="mobile-nav__link" href="#projects">Projects</a></li>
         <li><a class="mobile-nav__link" href="#contact">Contact</a></li>
         <li class="mobile-nav__line"></li>
         <li><button id="toggle-mode" class="mobile-ham__sun-button"><svg xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +95,7 @@
         <p class="about__description">Hello! My name is Branden and I love to creating things for the internet. </p>
         <p class="about__description">I've always had a passion for technology and building projects. I decided to go
           all in with web development and I haven't looked back since. My goal is the be the best version of myself and
-          build software that looks great and works well behind the scenes. </p>
+          build software that looks great but also works well behind the scenes. </p>
         <p class="about__description">When I'm not at the computer, I'm golfing, turning wrenches, spending time with my
           wife and family, and occasionally eating ice cream.</p>
         <hr class="about__hr">
@@ -114,7 +114,60 @@
         </div>
       </div>
       <div class="about__img-wrap">
-        <img src="/aboutimage.png" alt="photo of me" class="about__img" />
+        <img data-src="/aboutimage.png" src="https://fakeimg.pl/591x554" alt="photo of me"
+          class="about__img lazy loading" />
+      </div>
+    </section>
+    <section id="projects" class="featured container section">
+      <h3 class="featured__subtitle">Featured project</h3>
+      <div class="featured__wrapper">
+        <h2 class="featured__title">Sound Wave</h2>
+        <a class="featured__link" href="https://sound-wave-app-efde8f11e684.herokuapp.com/" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="var(--color-blue)">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+          </svg>
+        </a>
+      </div>
+      <p class="featured__description">Sound Wave is an application where you can create playlists and share with
+        your friends. Search by artist, album, or song, create a playlist and generate them right to your personal
+        Spotify account.</p>
+      <div class="featured__info-container">
+        <div>
+          <h3 class="featured__label">Tech Stack</h3>
+          <ul class="featured__tech-stack">
+            <li class="featured__tech">JavaScript</li>
+            <li class="featured__tech">Css Modules</li>
+            <li class="featured__tech">ExpressJS</li>
+            <li class="featured__tech">Axios</li>
+            <li class="featured__tech">React</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="featured__label">Project type</h3>
+          <p class="featured__tech">Fullstack</p>
+        </div>
+      </div>
+      <div class="featured__img-container">
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" data-src="/login.png" src="https://fakeimg.pl/2553x1273" alt="Sound Wave" />
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" data-src="/app.png" src="https://fakeimg.pl/2536x1280" alt="Sound Wave" />
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" data-src="/searchsongs.png" src="https://fakeimg.pl/2544x1278" alt="Sound Wave" />
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" data-src="/addtracks.png" src="https://fakeimg.pl/2538x1286" alt="Sound Wave" />
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" data-src="/playlist.png" src="https://fakeimg.pl/2536x1271" alt="Sound Wave" />
+        </div>
+        <div class="featured__img-wrapper">
+          <img class="lazy loading" data-src="/end.png" src="https://fakeimg.pl/2536x1280" alt="Sound Wave" />
+        </div>
       </div>
     </section>
     <section class="projects container section" id="projects">
@@ -122,28 +175,13 @@
       <p class="projects__description">Some things i've built recently</p>
       <div class="project__container">
         <!-- Project 1 -->
-        <h3 class="project__title">Sound Wave</h3>
-        <div class="projects__img-wrapper project__image1">
-          <img src="/SoundWave.png" alt="value" />
-        </div>
-        <div class="project__div project__content1">
-          <h3 class="project__subtitle">Sound Wave</h3>
-          <p class="project__description1">Tech Stack: JavaScript, CSS Modules, React, ExpressJs
-          </p>
-          <p class="project__description2">Sound Wave is an application where you can create playlist and share with
-            your friends. Search by artist, album, or song, create playlist and generate them right to your personal
-            Spotify account.</p>
-          <a class="button project__btn" href="https://sound-wave-app-efde8f11e684.herokuapp.com/"
-            target="_blank">Website</a>
-        </div>
-        <!-- Project 2 -->
 
-        <!-- <h3 class="project__title">Synthwave</h3>
+        <!-- <h3 class="project__title">fdsa</h3>
         <div class="projects__img-wrapper project__image2">
-          <img src="/Screenshot (1).png" alt="value" />
+          <img class="lazy" src="/Screenshot (1).png" alt="value" />
         </div>
         <div class="project__div project__content2">
-          <h3 class="project__subtitle">Synthwave</h3>
+          <h3 class="project__subtitle">fdsa</h3>
           <p class="project__description1">Tech Stack: JavaScript, CSS, HTML, MONGODB, React
           </p>
           <p class="project__description2">Id aliquet risus feugiat in ante metus dictum at. Sed velit dignissim sodales
@@ -158,11 +196,11 @@
           <a class="button project__btn" href="#">Website</a>
         </div> -->
 
-        <!-- Project 3 -->
+        <!-- Project 2 -->
 
         <!-- <h3 class="project__title">fds</h3>
         <div class="projects__img-wrapper project__image3">
-          <img src="/Screenshot (1).png" alt="value" />
+          <img class="lazy" src="/Screenshot (1).png" alt="value" />
         </div>
         <div class="project__div project__content3">
           <h3 class="project__subtitle">fdsa</h3>
@@ -180,14 +218,14 @@
           <a class="button project__btn" href="#">Website</a>
         </div> -->
 
-        <!-- Project 4 -->
+        <!-- Project 3 -->
 
-        <!-- <h3 class="project__title">React Quiz</h3>
+        <!-- <h3 class="project__title">fdsa</h3>
         <div class="projects__img-wrapper project__image4">
-          <img src="/Screenshot (1).png" alt="value" />
+          <img class="lazy" src="/Screenshot (1).png" alt="value" />
         </div>
         <div class="project__div project__content4">
-          <h3 class="project__subtitle">React Quiz</h3>
+          <h3 class="project__subtitle">fdsa</h3>
           <p class="project__description1">Tech Stack: JavaScript, CSS, HTML, MONGODB, React
           </p>
           <p class="project__description2">Id aliquet risus feugiat in ante metus dictum at. Sed velit dignissim sodales
