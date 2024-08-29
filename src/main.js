@@ -12,8 +12,8 @@ import '../styles/utilities.css';
 
 import mobileNav from './utilities/mobile-ham';
 import darkMode from './utilities/dark-mode';
-import lazyLoading from './utilities/lazy-loading';
+
 
 mobileNav();
 darkMode();
-lazyLoading();
+
