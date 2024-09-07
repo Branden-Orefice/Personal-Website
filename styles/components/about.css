@@ -111,9 +111,7 @@
     font-size: var(--size-normal);
   }
   .about__img {
-    height: 300px;
-    width: 350px;
-    margin: auto;
+    display: none;
   }
 }
 
@@ -124,17 +122,14 @@
   }
 
   .about__img {
-    width: 375px;
-    height: 325px;
+    display: none;
   }
 }
 
 /* Medium Screen */
 @media (min-width: 768px) {
   .about__img {
-    height: 350px;
-    width: 400px;
-    margin-bottom: 1rem;
+    display: none;
   }
 }
 
